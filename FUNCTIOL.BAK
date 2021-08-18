@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int leapyear(int);
+void main()
+{
+int n,flag=0;
+clrscr();
+printf("enter the year");
+scanf("%d",&n);
+flag=leapyear(n);
+if(flag==0)
+printf("the year is  leapyear");
+else
+printf("the year is not leapyear");
+getch();
+}
+int leapyear(int n)
+{
+if( n%4==0 && n%100==0 || n%400==0)
+return 1;
+else
+return 0;
+}

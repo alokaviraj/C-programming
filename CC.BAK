@@ -1,0 +1,15 @@
+int sum(int, int);
+void main()
+{
+  int a,b,sum=0;
+  clrscr();
+  printf("enter the numbers");
+  scanf("%d %d",&a,&b);
+  sum(a,b);
+  printf("the sum is %d", sum);
+  getch();
+}
+int sum(int x,int y)
+{
+       return(x+y);
+}

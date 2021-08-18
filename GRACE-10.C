@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+ main()
+{
+int n,i,marks[100];
+clrscr();
+printf("enter the no. of student");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("enter the marks");
+scanf("%d",&marks[i]);
+}
+printf(" marks after add  grace 10 are\n");
+for(i=0;i<n;i++)
+{
+marks[i]=marks[i]+10;
+printf("%d\n",marks[i]);
+}
+getch();
+}

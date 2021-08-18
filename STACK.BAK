@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<conio.h>
+#define s 10
+void push();
+void pop();
+void disp();
+int a[10],top=-1,n,i;
+void main()
+{
+int c;
+clrscr();
+f:printf("enter the choice");
+printf("\n1 push \n2 pop \n3 display \n4 exit");
+scanf("%d",&c);
+if(c==1)
+push();
+else if(c==2)
+pop();
+else if(c==3)
+disp();
+else if(c==4)
+goto l;
+else
+printf("wrong choice");
+goto f;
+l:getch();
+}
+void push()
+{
+if(top>=s-1)
+{
+printf("stack overflow");
+}
+else
+scanf("%d",&a[top]);
+top++;
+}
+void pop()
+{
+if(top<=-1)
+printf("stack underflow");
+else
+printf("%d",a[top]);
+top--;
+}
+void disp()
+{
+if(top>0)
+{
+printf("elements are ");
+for(i=top;i>=top;i--)
+printf("%d",a[i]);
+}}
+//else
+//{ printf("stack is empty");

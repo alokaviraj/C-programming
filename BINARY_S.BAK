@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i=0,n,key,mid,f,l;
+int arr[30];
+clrscr();
+printf("enter the size of array");
+scanf("%d",&n);
+printf("insert the element in the array\n");
+for(i=0;i<n;i++)
+scanf("%d",&arr[i]);
+printf("enter the no to be search");
+scanf("%d",&key);
+f=0;
+l=n-1;
+mid=(f+l)/2;
+//while(f<=l)
+{
+if(arr[mid]<key)
+{
+f=mid+1;
+l=n-1;
+mid=f+l/2;
+//printf("%d is less than search value");
+}
+//mid=(mid+1)+arr[n]/2;
+else if(arr[mid]==key)
+{
+printf("%d found at loction %d.",key,mid+1); }
+else
+f=0;
+l=mid-1;
+mid=f+l/2;
+}
+if(f>l)
+
+printf("element not found");
+getch();
+}
+/*mid=arr[0]+(mid-1)/2;
+}
+else if(arr[mid]==key)
+{
+printf("the element is found");
+}
+else
+{
+printf("the element is not found");
+}
+getch();
+}*/
+

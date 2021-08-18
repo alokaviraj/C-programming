@@ -1,0 +1,17 @@
+
+    //WAP TO CALCULATE THE AREA OF TRIANGLE
+
+    #include<stdio.h>
+#include<conio.h>
+void main()
+{
+int b,h,area;
+clrscr();
+printf("\nenter the base:");
+scanf("%d",&b);
+printf("enter the height:");
+scanf("%d",&h);
+area=(b*h)/2;
+printf("%d",area);
+getch();
+}

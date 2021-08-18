@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+float p,q,area,perimeter;
+clrscr();
+printf("enter the two number");
+scanf("%f%f",&p,&q);
+area=p*q;
+perimeter=2*(p+q);
+printf("area=%f\n",area);
+printf("perimeter=%f\n",perimeter);
+getch();
+}

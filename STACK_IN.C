@@ -1,0 +1,58 @@
+#include<stdio.h>
+#include<conio.h>
+void insert();
+void delete();
+void display();
+void location();
+int n,i,d,key;
+int arr[20];
+void main()
+{
+int c;
+clrscr();
+printf("enter the input");
+me:printf("\n1=insert \n2=delete \n3=display \n4=location \n5=exit\n");
+scanf("%d",&c);
+if(c==1)
+insert();
+else if(c==2)
+delete();
+else if(c==3)
+display();
+else if(c==4)
+location();
+else if(c==5)
+goto ne;
+else
+{printf("wrong choice");}
+goto me;
+ne:getch();
+}
+void insert()
+{
+printf("enter the length of array");
+scanf("%d",&n);
+printf("insert the no in the array\n");
+for(i=1;i<n+1;i++)
+scanf("%d",&arr[i]);
+}
+void delete()
+{
+printf("enter the location to be deleted from array");
+scanf("%d",&d);
+free(arr[d]);
+for(i=d;i<n;i++)
+arr[i]=arr[i+1];
+n--;
+}
+void display()
+{
+for(i=1;i<n+1;i++)
+printf("%d",arr[i]);
+}
+void location()
+{
+printf("enter the value to find location");
+scanf("%d",&key);
+printf("the location of %d is %d",key,arr[key]);
+}

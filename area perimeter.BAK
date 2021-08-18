@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int p,q,area,perimeter;
+p=8;
+q=7;
+area=p*q;
+perimeter=2*(p+q);
+clrscr();
+printf("area=%d\n",area);
+printf("perimeter=%d\n",perimeter);
+getch();
+}

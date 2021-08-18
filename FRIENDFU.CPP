@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+class complex
+{
+private:
+int a,b;
+public:
+void setData(int x,int y)
+{a=x; b=y;}
+void showData()
+{cout<<"a"<<a<<"b"<<b;}
+friend void fun(complex);
+};
+void fun(complex c)
+{
+cout<<"\nsum is"<<c.a+c.b;
+}
+void main()
+{
+clrscr();
+complex c1,c2;
+c1.setData(3,4);
+c2.setData(5,0);
+fun(c1);
+fun(c2);
+getch();
+}
+
